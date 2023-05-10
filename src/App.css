@@ -1,38 +1,95 @@
-.App {
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(65, 3, 34);
+}
+
+h1 {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input,
+button {
+  padding: .5rem 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input {
+  border: none;
+  background: transparent;
+  border-bottom: green 1px solid;
+  border-top: green 1px solid;
+  color: white;
+
+
+}
+
+.inputAndButton {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.inputAndButton button {
+  background: transparent;
+  color: white;
+  border: none;
+  border: 1px solid red;
+
+}
+
+.addedItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 192, 203, 0.244);
+  color: black;
+  justify-content: center;
+  padding: .5rem;
+  width: 100vw;
+  color: white;
+}
+
+
+.addedItem button {
+  background: red;
+  color: white;
+  float: right;
+  width: 10%;
+}
+
+
+.addedItem h2 {
+  text-align: center;
+  width: 90%;
+  text-align: justify;
+}
+
+body {
+  background: linear-gradient(-45deg, purple, pink, rgba(255, 0, 0, 0.35),green);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
