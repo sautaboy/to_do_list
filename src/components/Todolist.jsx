@@ -32,9 +32,6 @@ const TodoList = () => {
                 />
                 <button onClick={handleAddTodo}>Add Todo</button>
             </div>
-
-
-
             <ul>
                 {todos.map((todo, index) => (
                     <li className='addedItem' key={index}>
